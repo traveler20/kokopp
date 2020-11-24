@@ -1,0 +1,60 @@
+body{
+  font-size: 1.6rem;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+  background-color: #73cbf3;
+  color: #333;
+  line-height: 1.4;
+}
+
+.main{
+  margin-top: 78px;
+}
+
+.main .flash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.pages-area {
+    width: 70%;
+    margin: 5% auto;
+}
+.pages-area .inner {
+    background: #fff;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.12);
+}
+
+.pages-title{
+  font-size:
+}
+.pages-area .inner h2 {
+    margin: 3% 0;
+}
+
+.mt-3, .my-3 {
+    margin-top: 1rem !important;
+}
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 1000px){
+  .pages-area{
+      width: 90%;
+  }
+  .pages-area .inner h2 {
+    margin: 3% 0;
+    font-size: 1.8rem;
+  }
+}
