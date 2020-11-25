@@ -7,6 +7,7 @@ body{
 }
 
 .main{
+  padding-top: 30px;
   margin-top: 78px;
 }
 
@@ -22,7 +23,7 @@ body{
     margin: 5% auto;
 }
 .pages-area .inner {
-    background: #fff;
+    background: #f2f2f2;
     padding: 5%;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.12);

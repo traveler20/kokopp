@@ -45,11 +45,19 @@ a:hover{
   padding: 0 30px;
   margin: 0 auto;
 }
+.logo{
+  width: 180px;
+  height: auto;
+}
 .section-title{
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
+.logo .section-title{
+  vertical-align: middle;
+}
+
 img{
   vertical-align: bottom;
   width: 100%;
@@ -61,7 +69,8 @@ img{
   line-height: 50px;
   /*marginで中央寄せか寄せか設定*/
   margin: 0 auto;
-  background-color: #1b7c26;
+  background-color: #73cbf3;
+  background-image: linear-gradient(45deg, #73cbf3 0%, #ef91b9 100%);
   box-shadow: 0 0 6px #1b1310;
   border-radius: 30px;
   text-align: center;
@@ -93,7 +102,7 @@ img{
 /* header
 /* ---------------------------- */
 .header{
-  background:#000;
+  background:#fff;
   padding: 19px 30px;
   position: absolute;
   top: 0;
@@ -113,8 +122,8 @@ img{
 }
 .header.fixed{
   position: fixed;
-  background-color: #282f35;
-  padding: 30px;
+  background-color: #fff;
+  padding: 19px 30px;
   width: 100%;
   transition: 0.3s;
 }
@@ -138,7 +147,8 @@ img{
   line-height: 40px;
   /*marginで中央寄せか寄せか設定*/
   margin: 0 ;
-  background-color: #1b7c26;
+  background-color: #73cbf3;
+  background-image: linear-gradient(45deg, #73cbf3 0%, #ef91b9 100%);
   box-shadow: 0 0 6px #1b1310;
   border-radius: 30px;
   text-align: center;
@@ -159,28 +169,33 @@ img{
 .fv{
   height: 50vh;
   min-height: 550px;
+  margin-top: 78px;
   position: relative
 }
 .fv img{
   object-fit: cover;
 
   min-height: 100%;
+  /*ぼかし調整*/
+  /* filter: blur(2px); */
+  /*透過度調整*/
+  filter: opacity(30%);
 }
 .main-copy{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: #fff;
+  color: #000;
 }
 .sub-copy{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 31px;
 }
 .ttl-copy{
-  font-size: 7rem;
+  font-size: 5rem;
   margin-bottom: 31px;
   font-weight: bold;
 }
@@ -193,6 +208,7 @@ img{
   padding: 0;
   position: relative;
 }
+
 .section-wrapper:first-of-type::after{
   content: "";
   width: 100%;
@@ -205,7 +221,7 @@ img{
 
 }
 .about-bg{
-  background-image: url(../img/about-img.jpg);
+  background-image: url(../img/about_01.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -272,19 +288,41 @@ img{
 /* CAbutton（app）
 /* ---------------------------- */
 .bg-ca{
-  background-image: url(../img/contact-bgi@2x.jpg);
+
+  /*相対配置*/
+  position: relative;
+  padding: 0;
+}
+
+.ca-bgi{
+  height: 50vh;
+  min-height: 550px;
+  max-height: 550px;
+  object-fit: cover;
+  min-height: 100%;
+  /* 透過度調整 */
+  filter: opacity(30%);
+}
+
+.ca-copy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
 .ca-title{
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 .ca-text{
   text-align: center;
-  color: #fff;
+  color: #000;
   font-size: 2rem;
   margin-bottom: 40px;
 }
-
 
 /* ---------------------------- */
 /* footer（app）
@@ -308,6 +346,10 @@ img{
   text-align: left;
   padding-top: 20px;
   padding-left: 10px;
+}
+.footer-logo{
+  width: 90px;
+  height: auto;
 }
 
 /* ============================ */
@@ -416,6 +458,28 @@ img{
     max-width: 100%;
     margin: 0 auto 30px;
   }
+
+
+  /* ---------------------------- */
+  /* CAbutton_sp
+  /* ---------------------------- */
+  .bg-ca{
+    padding: 0;
+  }
+  .ca-copy{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+  }
+
+  .ca-title{
+    font-size: 4vw;
+  }
+  .ca-text{
+    font-size:  4vw;
+  }
+
 
   /* ----------------------- */
   /* section_footer_sp
