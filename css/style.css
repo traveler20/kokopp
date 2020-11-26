@@ -48,13 +48,14 @@ a:hover{
 .logo{
   width: 180px;
   height: auto;
+  vertical-align: middle;
 }
 .section-title{
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.logo .section-title{
+.section-title{
   vertical-align: middle;
 }
 
@@ -132,7 +133,6 @@ img{
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
-  font-style: italic;
 }
 .header a:hover{
   opacity: 0.7;
