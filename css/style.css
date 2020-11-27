@@ -54,8 +54,6 @@ a:hover{
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 30px;
-}
-.section-title{
   vertical-align: middle;
 }
 
@@ -363,10 +361,16 @@ img{
   .section-wrapper{
     padding: 100px 0 40px;
   }
+  .logo{
+    width: 120px;
+    height: auto;
+    vertical-align: middle;
+  }
   .section-title{
     padding: 0 4vw;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 50px;
+    vertical-align: middle;
   }
   .section-title::after{
     width: 90px;
