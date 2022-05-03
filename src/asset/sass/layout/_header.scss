@@ -166,10 +166,6 @@ $header-height: 60px;
     }
 
     @include s.breakpoint(tablet) {
-        &__inner {
-            justify-content: space-evenly;
-        }
-
         &__nav {
             flex-direction: row-reverse;
         }
