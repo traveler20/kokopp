@@ -3,34 +3,34 @@
 @use "./../../foundation/system" as s;
 
 .c-section {
-	background-color: s.$c-base;
-	padding: 120px 0;
-	&:nth-of-type(even) {
-		background-color: s.$c-base-sub;
-	}
+    background-color: s.$c-base-white;
+    padding: 120px 0;
+    &:nth-of-type(even) {
+        background-color: s.$c-base-lightGray;
+    }
 
-	&__inner {
-		max-width: 1220px;
-		padding: 10px 20px;
-		margin: 0 auto;
-	}
-	&__title {
-		color: s.$c-accent;
-		text-align: center;
-		font-size: 3.6rem;
-		font-weight: 700;
-		letter-spacing: 8px;
-		margin: 0 auto 12px;
-		@include s.garamond(bold);
-	}
-	&__lead {
-		display: table;
-		margin: 0 auto 44px;
-		text-align: left;
-	}
+    &__inner {
+        @include s.content-maxwidth();
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin: 0 auto 12px;
+    }
+    &__lead {
+        display: table;
+        margin: 0 auto 32px;
+        text-align: left;
+    }
+    &__block {
+        margin: 32px auto 0;
+    }
 
-	@include s.breakpoint(tablet) {
-	}
-	@include s.breakpoint(pc) {
-	}
+    @include s.breakpoint(tablet) {
+    }
+    @include s.breakpoint(pc) {
+    }
 }
