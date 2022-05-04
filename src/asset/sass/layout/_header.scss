@@ -2,6 +2,15 @@
 --------------------------- */
 @use "./../foundation/system" as s;
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.l-main {
+    flex: 1;
+}
+
 $header-height: 60px;
 
 .l-header {
