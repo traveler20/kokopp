@@ -1,0 +1,33 @@
+/* p-fv
+--------------------------- */
+@use "./../../foundation/system" as *;
+
+.p-fv {
+    min-height: 40vh;
+    background-color: rgba($color: $c-base-black, $alpha: 0.7);
+    &:after {
+        background-image: url();
+    }
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__inner {
+        width: 100%;
+        @include content-maxwidth();
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.4;
+        margin: 0 0 16px;
+    }
+
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}
