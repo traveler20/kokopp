@@ -1,0 +1,12 @@
+/* l-main
+--------------------------- */
+@use "./../foundation/system" as s;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.l-main {
+    flex: 1;
+}

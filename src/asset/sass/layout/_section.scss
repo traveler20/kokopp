@@ -1,8 +1,8 @@
-/* c-section
+/* l-section
 --------------------------- */
-@use "./../../foundation/system" as s;
+@use "./../foundation/system" as s;
 
-.c-section {
+.l-section {
     background-color: s.$c-base-white;
     padding: 120px 0;
     // &:nth-of-type(even) {

@@ -10,6 +10,8 @@
  *--------------------------------------*/
 @use "./layout/header";
 @use "./layout/footer";
+@use "./layout/main";
+@use "./layout/section";
 
 /*--------------------------------------*
  * object
@@ -18,7 +20,6 @@
  * component
  -------------------*/
 @use "./object/component/loading";
-@use "./object/component/section";
 @use "./object/component/lists";
 @use "./object/component/cta";
 
