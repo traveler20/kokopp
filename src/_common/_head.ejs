@@ -6,23 +6,29 @@
 <%_ if(meta.title) { _%>
 <title><%= meta.title%></title>
 <%_ }else{ _%>
-<title>サイトタイトル</title>
+<title>小江戸川越観光・月がきれいの聖地巡礼ならここっぷ</title>
 <%_ } _%>
 <meta name="description" content="<%= meta.description %>" />
 <meta property="og:title" content="<%= meta.title%>" />
 <meta property="og:description" content="<%= meta.description %>" />
 <%_ if(meta.url) { _%>
-<meta property="og:url" content="https://traveler20.site/<%= meta.url %>" />
+<meta
+    property="og:url"
+    content="https://kawagoe.traveler20.site/<%= meta.url %>"
+/>
 <%_ }else{ _%>
-<meta property="og:url" content="https://traveler20.site/" />
+<meta property="og:url" content="https://kawagoe.traveler20.site/" />
 <%_ } _%>
 <!-- ogp-image -->
 <%_ if(meta.ogp) { _%>
-<meta property="og:image" content="https://traveler20.site/<%= meta.ogp %>" />
+<meta
+    property="og:image"
+    content="https://kawagoe.traveler20.site/<%= meta.ogp %>"
+/>
 <%_ }else{ _%>
 <meta
     property="og:image"
-    content="https://traveler20.site/asset/img/ogp.webp"
+    content="https://kawagoe.traveler20.site/asset/img/ogp.webp"
 />
 <%_ } _%>
 <meta property="og:locale" content="ja_JP" />

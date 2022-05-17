@@ -3,19 +3,29 @@
 @use "./../../foundation/system" as *;
 
 .p-fv {
-    min-height: 40vh;
-    background-color: rgba($color: $c-base-black, $alpha: 0.7);
-    &:after {
-        background-image: url();
-    }
-
+    min-height: 56vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
+    color: $c-black;
+    background-color: rgba($color: $c-base-white, $alpha: 0.6);
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(./../img/page/fv-bg.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
     &__inner {
         width: 100%;
-        @include content-maxwidth();
+        @include content-maxwidth(1000px);
         margin: 0 auto;
         padding: 10px 20px;
     }

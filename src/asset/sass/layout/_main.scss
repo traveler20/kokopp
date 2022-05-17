@@ -1,6 +1,6 @@
 /* l-main
 --------------------------- */
-@use "./../foundation/system" as s;
+@use "./../foundation/system" as *;
 
 body {
     display: flex;
@@ -9,4 +9,9 @@ body {
 }
 .l-main {
     flex: 1;
+}
+.l-main__logo {
+    width: 120px;
+    background-color: $c-white;
+    border-radius: 4px;
 }
