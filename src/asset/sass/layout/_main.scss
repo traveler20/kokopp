@@ -11,6 +11,7 @@ body {
     flex: 1;
 }
 .l-main__logo {
+    display: inline-block;
     width: 120px;
     background-color: $c-white;
     border-radius: 4px;
