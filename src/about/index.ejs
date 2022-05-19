@@ -5,6 +5,14 @@
         <!-- meta -->
         <%- include('./../_common/_head', { path:path,meta:data.meta['about'],})
         %>
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
     </head>
     <body>
         <%- include('./../_common/_header',{path:path,}) %>
@@ -12,16 +20,56 @@
         <!-- .l-main -->
         <main class="l-main">
             <!-- .p-about -->
-            <section id="about" class="p-about l-section">
-                <div class="l-section__inner">
-                    <h2 class="l-section__title">タイトルテキスト</h2>
-                    <p class="l-section__lead">aboutページです。</p>
+            <section id="about" class="p-about l-section-page">
+                <div class="l-section-page__inner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img
+                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13.jpg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img
+                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13-1.jpg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img
+                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13-2.jpg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <style>
+                            .swiper-pagination-bullet {
+                                background-color: #fff;
+                            }
+                        </style>
+                    </div>
+                    <h2>h2タイトルテキスト</h2>
+                    <p>
+                        複素数体であれば、任意のCM-タイプのAは、実際、数体である定義体（英語版）(fieldofdefinition)を持つ。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosatiinvolution）をもつ環として既に分類される。
+                    </p>
                 </div>
             </section>
             <!-- /.p-about -->
         </main>
         <!-- /.l-main -->
 
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script> -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <%- include('./../_common/_footer',{path:path,}) %>
     </body>
 </html>

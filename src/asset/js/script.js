@@ -50,6 +50,57 @@ for (let i = 0; i < navLink.length; i++) {
     };
 }
 
+// var mySwiper = new Swiper(".swiper-container", {
+//     effect: "flip",
+//     loop: true,
+//     centeredSlides: true,
+//     pagination: ".swiper-pagination",
+//     nextButton: ".swiper-button-next",
+//     prevButton: ".swiper-button-prev",
+// });
+const swiper = new Swiper(".swiper-container", {
+    loop: true,
+    // ページネーション
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    // 前後の矢印
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // スクロールバー
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    // },
+    // loop: true,
+
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+    // ページネーションが必要なら追加
+    // loop: true,
+    // centeredSlides: true,
+    // pagination: ".swiper-pagination",
+    // nextButton: ".swiper-button-next",
+    // prevButton: ".swiper-button-prev",
+    // pagination: {
+    //     el: ".swiper-pagination",
+    // },
+    // // ナビボタンが必要なら追加
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+});
+
 // .js-fadein
 function showElementAnimation() {
     /* js-fadeInの値をelementに代入 */

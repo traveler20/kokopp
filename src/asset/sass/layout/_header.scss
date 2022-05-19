@@ -61,7 +61,7 @@ $header-height: 60px;
     }
 
     &__navLists {
-        z-index: 1;
+        z-index: 2;
         position: fixed;
         top: $header-height;
         left: 0;

@@ -1,0 +1,19 @@
+/* c-slider
+--------------------------- */
+@use "./../../foundation/system" as *;
+
+.swiper-container {
+    overflow-y: hidden;
+    position: relative;
+    background: #ccc;
+}
+.swiper-slide picture {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: $c-body-white;
+}

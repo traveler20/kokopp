@@ -34,3 +34,24 @@
     @include s.breakpoint(pc) {
     }
 }
+
+.l-section-page {
+    padding: 8px 0 40px;
+    // &:nth-of-type(even) {
+    //     background-color: s.$c-base-lightGray;
+    // }
+
+    &__inner {
+        @include s.content-maxwidth(800px);
+        margin: 0 auto;
+        padding: 10px 20px;
+
+        > * {
+            margin: 16px 0;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+}

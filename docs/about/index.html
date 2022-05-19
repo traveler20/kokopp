@@ -34,6 +34,15 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
         />
         <link rel="stylesheet" href="./../asset/css/style.css" />
+
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
     </head>
     <body>
         <!-- .l-header -->
@@ -74,16 +83,56 @@
         <!-- .l-main -->
         <main class="l-main">
             <!-- .p-about -->
-            <section id="about" class="p-about l-section">
-                <div class="l-section__inner">
-                    <h2 class="l-section__title">タイトルテキスト</h2>
-                    <p class="l-section__lead">aboutページです。</p>
+            <section id="about" class="p-about l-section-page">
+                <div class="l-section-page__inner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img
+                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13.jpg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img
+                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13-1.jpg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img
+                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13-2.jpg"
+                                        alt=""
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <style>
+                            .swiper-pagination-bullet {
+                                background-color: #fff;
+                            }
+                        </style>
+                    </div>
+                    <h2>h2タイトルテキスト</h2>
+                    <p>
+                        複素数体であれば、任意のCM-タイプのAは、実際、数体である定義体（英語版）(fieldofdefinition)を持つ。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosatiinvolution）をもつ環として既に分類される。
+                    </p>
                 </div>
             </section>
             <!-- /.p-about -->
         </main>
         <!-- /.l-main -->
 
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script> -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <!-- .l-nav -->
         <nav class="l-nav">
             <div class="l-nav__inner">
@@ -123,18 +172,26 @@
                     <h4 class="l-footer__subtitle">Links</h4>
                     <ul class="l-footer__lists">
                         <li>
-                            <a href="https://www.city.kawagoe.saitama.jp/"
+                            <a
+                                href="https://www.city.kawagoe.saitama.jp/"
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
                                 >川越市公式ホームページ</a
                             >
                         </li>
                         <li>
-                            <a href="https://twitter.com/tsukigakirei_tv"
+                            <a
+                                href="https://twitter.com/tsukigakirei_tv"
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
                                 >TVアニメ「月がきれい」</a
                             >
                         </li>
                         <li>
                             <a
                                 href="https://www.joqr.co.jp/qr/program/kokoradi/"
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
                                 >小原好美のココロおきなく</a
                             >
                         </li>
