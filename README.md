@@ -1,4 +1,12 @@
+<p align="center">
+<a href="https://kawagoe.traveler20.site" target="_blank">
+<img src="./public/github-header.png" alt="kokopp"/>
+</a>
+</p>
+
 # kokopp
+
+## タスク
 
 -   [x] おおまかなサイト設計
 -   [ ] Notion に地図の登録
