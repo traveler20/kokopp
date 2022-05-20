@@ -1,0 +1,32 @@
+<%_ const path='./../'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./../_common/_head', { path:path,meta:data.meta['about'],})
+        %>
+    </head>
+    <body>
+        <%- include('./../_common/_header',{path:path,}) %>
+
+        <!-- .l-main -->
+        <main class="l-main">
+            <section id="about" class="l-section-page">
+                <div class="l-section-page__inner">
+                    <h2>お問い合わせありがとうございました。</h2>
+                    <p>
+                        お問い合わせを受け付けました。内容を確認してお返事致します。
+                    </p>
+                    <div class="c-cta">
+                        <a href="/" class="c-cta__button">
+                            トップページに戻る
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- /.l-main -->
+
+        <%- include('./../_common/_footer',{path:path,}) %>
+    </body>
+</html>

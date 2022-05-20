@@ -1,0 +1,24 @@
+<%_ const path='./../'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./../_common/_head', { path:path,meta:data.meta['about'],})
+        %>
+    </head>
+    <body id="map">
+        <%- include('./../_common/_header',{path:path,}) %>
+
+        <!-- .l-main -->
+        <main class="l-main">
+            <section class="l-section-page-map">
+                <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1rll46eD5NaPP_aOETmhkPeTYgNIsogKL&ehbc=2E312F"
+                ></iframe>
+            </section>
+        </main>
+        <!-- /.l-main -->
+
+        <%- include('./../_common/_footer',{path:path,}) %>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<%_ const path='./../'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./../_common/_head', { path:path,meta:data.meta['about'],})
+        %>
+    </head>
+    <body>
+        <%- include('./../_common/_header',{path:path,}) %>
+
+        <!-- .l-main -->
+        <main class="l-main">
+            <section class="l-section-page">
+                <div class="l-section-page__inner">
+                    <p>お問い合わせは以下からよろしくお願いします。</p>
+                    <form
+                        class="c-form"
+                        action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSeYLcfFAvt3q1Gvoj1OfuPMIRC-dBkf_hJQsQU7asA0bxawYA/formResponse"
+                        method="POST"
+                        target="hidden_iframe"
+                        onsubmit="submitted=true;"
+                    >
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-name"
+                                >名前・会社名<span class="c-form__required"
+                                    >必須</span
+                                ></label
+                            >
+                            <input
+                                name="entry.690315515"
+                                class="c-form__input"
+                                id="field-name"
+                                placeholder="株式会社 山田"
+                                type="text"
+                                required="required"
+                            />
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-mail"
+                                >メールアドレス<span class="c-form__required"
+                                    >必須</span
+                                ></label
+                            >
+                            <input
+                                name="entry.310605352"
+                                class="c-form__input"
+                                id="field-mail"
+                                placeholder="sample@gmail.com"
+                                type="email"
+                                required="required"
+                            />
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-select"
+                                >ご用件/目的</label
+                            >
+                            <select
+                                name="entry.2098078720"
+                                class="c-form__input"
+                                id="field-select"
+                            >
+                                <option value="">選択してください</option>
+                                <option value="記事掲載等のご要望">
+                                    記事掲載等のご要望
+                                </option>
+                                <option value="WEBサイト構築等のご依頼">
+                                    WEBサイト構築等のご依頼
+                                </option>
+                                <option value="取材等の連絡">
+                                    取材等の連絡
+                                </option>
+                                <option
+                                    value="その他（メッセージ内容に記載ください）"
+                                >
+                                    その他（メッセージ内容に記載ください）
+                                </option>
+                            </select>
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-message"
+                                >メッセージ内容</label
+                            >
+                            <textarea
+                                name="entry.1726417427"
+                                class="c-form__input"
+                                id="field-message"
+                                placeholder="お問い合わせ内容"
+                            ></textarea>
+                        </div>
+                        <div class="c-cta">
+                            <button class="c-cta__button" type="submit">
+                                送信する
+                            </button>
+                        </div>
+                        <script type="text/javascript">
+                            let submitted = false;
+                        </script>
+                        <iframe
+                            name="hidden_iframe"
+                            id="hidden_iframe"
+                            style="display: none"
+                            onload="if(submitted){window.location='./thanks.html';}"
+                        ></iframe>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- /.l-main -->
+
+        <%- include('./../_common/_footer',{path:path,}) %>
+    </body>
+</html>

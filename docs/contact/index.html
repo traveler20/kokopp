@@ -73,52 +73,100 @@
 
         <!-- .l-main -->
         <main class="l-main">
-            <!-- .p-about -->
-            <section id="about" class="p-about l-section-page">
+            <section class="l-section-page">
                 <div class="l-section-page__inner">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <picture>
-                                    <img
-                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13.jpg"
-                                        alt=""
-                                    />
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <img
-                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13-1.jpg"
-                                        alt=""
-                                    />
-                                </picture>
-                            </div>
-                            <div class="swiper-slide">
-                                <picture>
-                                    <img
-                                        src="https://traveler20.github.io/kokopp/asset/img/gallery/13-2.jpg"
-                                        alt=""
-                                    />
-                                </picture>
-                            </div>
+                    <p>お問い合わせは以下からよろしくお願いします。</p>
+                    <form
+                        class="c-form"
+                        action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSeYLcfFAvt3q1Gvoj1OfuPMIRC-dBkf_hJQsQU7asA0bxawYA/formResponse"
+                        method="POST"
+                        target="hidden_iframe"
+                        onsubmit="submitted=true;"
+                    >
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-name"
+                                >名前・会社名<span class="c-form__required"
+                                    >必須</span
+                                ></label
+                            >
+                            <input
+                                name="entry.690315515"
+                                class="c-form__input"
+                                id="field-name"
+                                placeholder="株式会社 山田"
+                                type="text"
+                                required="required"
+                            />
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <style>
-                            .swiper-pagination-bullet {
-                                background-color: #fff;
-                            }
-                        </style>
-                    </div>
-                    <h2>h2タイトルテキスト</h2>
-                    <p>
-                        複素数体であれば、任意のCM-タイプのAは、実際、数体である定義体（英語版）(fieldofdefinition)を持つ。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosatiinvolution）をもつ環として既に分類される。
-                    </p>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-mail"
+                                >メールアドレス<span class="c-form__required"
+                                    >必須</span
+                                ></label
+                            >
+                            <input
+                                name="entry.310605352"
+                                class="c-form__input"
+                                id="field-mail"
+                                placeholder="sample@gmail.com"
+                                type="email"
+                                required="required"
+                            />
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-select"
+                                >ご用件/目的</label
+                            >
+                            <select
+                                name="entry.2098078720"
+                                class="c-form__input"
+                                id="field-select"
+                            >
+                                <option value="">選択してください</option>
+                                <option value="記事掲載等のご要望">
+                                    記事掲載等のご要望
+                                </option>
+                                <option value="WEBサイト構築等のご依頼">
+                                    WEBサイト構築等のご依頼
+                                </option>
+                                <option value="取材等の連絡">
+                                    取材等の連絡
+                                </option>
+                                <option
+                                    value="その他（メッセージ内容に記載ください）"
+                                >
+                                    その他（メッセージ内容に記載ください）
+                                </option>
+                            </select>
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-message"
+                                >メッセージ内容</label
+                            >
+                            <textarea
+                                name="entry.1726417427"
+                                class="c-form__input"
+                                id="field-message"
+                                placeholder="お問い合わせ内容"
+                            ></textarea>
+                        </div>
+                        <div class="c-cta">
+                            <button class="c-cta__button" type="submit">
+                                送信する
+                            </button>
+                        </div>
+                        <script type="text/javascript">
+                            let submitted = false;
+                        </script>
+                        <iframe
+                            name="hidden_iframe"
+                            id="hidden_iframe"
+                            style="display: none"
+                            onload="if(submitted){window.location='./thanks.html';}"
+                        ></iframe>
+                    </form>
                 </div>
             </section>
-            <!-- /.p-about -->
         </main>
         <!-- /.l-main -->
 
