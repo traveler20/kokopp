@@ -28,6 +28,7 @@
 -   [ ] Wraptas 組み込み
 -   [ ] Wraptas 用 CSS 調整
 -   [ ] Wraptas 開発環境の構築
+-   [ ] 404 ページの制作
 
 ## 構成
 
