@@ -17,15 +17,17 @@
 -   [x] OGP 画像の設定
 -   [ ] ブランドガイドラインをざっくりまとめる
     -   [x] ロゴ・アイコンの使い方
-    -   [ ] トップページの h2/h3/p
-    -   [ ] fv/子ページの fv(cover)
-    -   [ ] h2 見出し
-    -   [ ] h3 見出し
-    -   [ ] CTA ボタン
+    -   [x] トップページの h2/h3/p
+    -   [x] fv/子ページの fv(cover)
+    -   [x] h2 見出し
+    -   [x] h3 見出し
+    -   [x] CTA ボタン
     -   [ ] header
     -   [ ] footer
     -   [ ] nav
--   [ ] Wraptas 最適化
+-   [ ] Wraptas 組み込み
+-   [ ] Wraptas 用 CSS 調整
+-   [ ] Wraptas 開発環境の構築
 
 ## 構成
 
