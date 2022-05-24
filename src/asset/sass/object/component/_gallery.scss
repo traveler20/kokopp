@@ -13,7 +13,7 @@
         height: 100%;
         color: $c-body-black;
         text-decoration: none;
-        border: solid 1px #efefef;
+        border: solid 0.5px #ccc;
 
         display: grid;
     }
@@ -21,16 +21,21 @@
     &__title {
         grid-area: 1/-1;
     }
+    &__picture {
+        img {
+            border: solid 8px #fff;
+        }
+    }
     &__title {
         // color: #999;
-        // background: linear-gradient(to top, #ffffffd9, #ffffff00) bottom/100%
-        //     60% no-repeat;
+        background: linear-gradient(to top, #ffffffd9, #ffffff00) bottom/100%
+            60% no-repeat;
         font-weight: bold;
 
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 8px 8px;
+        padding: 10px 14px;
     }
 
     @include breakpoint(tablet) {

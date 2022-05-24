@@ -40,17 +40,21 @@
                     <article class="l-section__block">
                         <!-- 画像一覧 -->
                         <ul class="c-gallery">
-                            <% for (let i = 0; i < 10; i++) { %>
+                            <% for (let i in data.gallery) { %>
                             <li class="c-gallery__list">
-                                <a href="#url" class="c-gallery__link">
+                                <a
+                                    href="<%- data.gallery[i].url %>"
+                                    class="c-gallery__link"
+                                >
                                     <picture class="c-gallery__picture">
                                         <img
-                                            src="https://placehold.jp/300x300.png"
+                                            src="/asset/img/gallery/<%- data.gallery[i].img %>.webp"
                                             alt=""
+                                            loading="lazy"
                                         />
                                     </picture>
                                     <h3 class="c-gallery__title">
-                                        タイトルテキスト
+                                        <%- data.gallery[i].title %>
                                     </h3>
                                 </a>
                             </li>

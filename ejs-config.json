@@ -35,6 +35,98 @@
                 "description": "小江戸川越観光・月がきれいの聖地巡礼ならここっぷ。川越の名所をまとめたメディアサイトです。",
                 "url": "contact"
             }
+        },
+        "gallery": {
+            "1": {
+                "img": "1",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "2": {
+                "img": "2",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "3": {
+                "img": "3",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "4": {
+                "img": "4",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "5": {
+                "img": "5",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "6": {
+                "img": "6",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "7": {
+                "img": "7",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "8": {
+                "img": "8",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "9": {
+                "img": "9",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "10": {
+                "img": "10",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "11": {
+                "img": "11",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "12": {
+                "img": "12",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "13": {
+                "img": "13",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "14": {
+                "img": "14",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "15": {
+                "img": "15",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "16": {
+                "img": "16",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "17": {
+                "img": "17",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            },
+            "18": {
+                "img": "18",
+                "title": "川越駅",
+                "url": "kawagoe-eki"
+            }
         }
     }
 }

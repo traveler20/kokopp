@@ -1,0 +1,50 @@
+<%_ const path='./../'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./../_common/_head', {
+        path:path,meta:data.meta['gallery'],}) %>
+    </head>
+    <body>
+        <%- include('./../_common/_header',{path:path,}) %>
+
+        <!-- .l-main -->
+        <main class="l-main">
+            <!-- .p-gallery -->
+            <section id="gallery" class="p-gallery l-section">
+                <div class="l-section__inner">
+                    <h2 class="l-section__title">川越の観光スポット一覧</h2>
+                    <p class="l-section__lead">
+                        小江戸川越の観光名所や月がきれいの聖地巡礼の名所をまとめました。
+                    </p>
+                    <article class="l-section__block">
+                        <!-- 画像一覧 -->
+                        <ul class="c-gallery">
+                            <% for (let i = 0; i < 10; i++) { %>
+                            <li class="c-gallery__list">
+                                <a href="#url" class="c-gallery__link">
+                                    <picture class="c-gallery__picture">
+                                        <img
+                                            src="https://placehold.jp/300x300.png"
+                                            alt=""
+                                            loading="lazy"
+                                        />
+                                    </picture>
+                                    <h3 class="c-gallery__title">
+                                        タイトルテキスト
+                                    </h3>
+                                </a>
+                            </li>
+                            <% } %>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <!-- /.p-gallery -->
+        </main>
+        <!-- /.l-main -->
+
+        <%- include('./../_common/_footer',{path:path,}) %>
+    </body>
+</html>
