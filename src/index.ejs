@@ -39,6 +39,23 @@
                     </p>
                     <article class="l-section__block">
                         <!-- 画像一覧 -->
+                        <ul class="c-gallery">
+                            <% for (let i = 0; i < 10; i++) { %>
+                            <li class="c-gallery__list">
+                                <a href="#url" class="c-gallery__link">
+                                    <picture class="c-gallery__picture">
+                                        <img
+                                            src="https://placehold.jp/300x300.png"
+                                            alt=""
+                                        />
+                                    </picture>
+                                    <h3 class="c-gallery__title">
+                                        タイトルテキスト
+                                    </h3>
+                                </a>
+                            </li>
+                            <% } %>
+                        </ul>
                     </article>
                     <article class="l-section__block">
                         <!-- .c-cta -->
