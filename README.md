@@ -22,7 +22,7 @@
     -   [x] h2 見出し
     -   [x] h3 見出し
     -   [x] CTA ボタン
-    -   [ ] header
+    -   [x] header
     -   [ ] footer
     -   [ ] nav
 -   [ ] Wraptas 組み込み
