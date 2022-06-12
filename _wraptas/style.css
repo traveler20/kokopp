@@ -83,10 +83,11 @@ body {
     bottom: 0;
 }
 .notion-h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     padding: 4px 14px;
     border-left: solid 4px #73cbf3;
+    margin: 24px 0 8px;
 }
 .notion-gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
