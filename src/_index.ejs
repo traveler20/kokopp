@@ -1,0 +1,77 @@
+<%_ const path='./'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./_common/_head', { path:path,meta:data.meta['home'],})%>
+    </head>
+    <body>
+        <!-- .c-loading -->
+        <article class="c-loading" id="js-loading">
+            <div class="c-loading__spinner"></div>
+        </article>
+        <!-- /.c-loading -->
+
+        <%- include('./_common/_header',{path:path,}) %>
+
+        <!-- .l-main -->
+        <main class="l-main">
+            <!-- .p-fv -->
+            <section class="p-fv">
+                <div class="p-fv__inner">
+                    <h1 class="p-fv__title">
+                        川越観光なら<br />
+                        ここっぷ
+                    </h1>
+                    <p>
+                        川越の観光や月がきれいの聖地巡礼の<br />名所をまとめています。
+                    </p>
+                </div>
+            </section>
+            <!-- /.p-fv -->
+
+            <!-- .p-gallery -->
+            <section id="about" class="p-gallery l-section">
+                <div class="l-section__inner">
+                    <h2 class="l-section__title">川越の観光スポット一覧</h2>
+                    <p class="l-section__lead">
+                        小江戸川越の観光名所や月がきれいの聖地巡礼の名所をまとめました。
+                    </p>
+                    <article class="l-section__block">
+                        <!-- 画像一覧 -->
+                        <ul class="c-gallery">
+                            <% for (let i in data.gallery) { %>
+                            <li class="c-gallery__list">
+                                <a
+                                    href="<%- data.gallery[i].url %>"
+                                    class="c-gallery__link"
+                                >
+                                    <picture class="c-gallery__picture">
+                                        <img
+                                            src="/asset/img/gallery/<%- data.gallery[i].img %>.webp"
+                                            alt=""
+                                            loading="lazy"
+                                        />
+                                    </picture>
+                                    <h3 class="c-gallery__title">
+                                        <%- data.gallery[i].title %>
+                                    </h3>
+                                </a>
+                            </li>
+                            <% } %>
+                        </ul>
+                    </article>
+                    <article class="l-section__block">
+                        <!-- .c-cta -->
+                        <%- include('./_component/_cta',{path:path,}) %>
+                        <!-- /.c-cta -->
+                    </article>
+                </div>
+            </section>
+            <!-- /.p-gallery -->
+        </main>
+        <!-- /.l-main -->
+
+        <%- include('./_common/_footer',{path:path,}) %>
+    </body>
+</html>
