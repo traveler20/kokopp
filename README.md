@@ -25,11 +25,12 @@
     -   [x] header
     -   [x] footer
     -   [x] nav
--   [ ] Wraptas 組み込み
--   [ ] Wraptas 用 HTML 調整
--   [ ] Wraptas 用 CSS 調整
--   [ ] Wraptas 開発環境の構築
--   [ ] 404 ページの制作
+-   [x] Wraptas 組み込み
+-   [x] Wraptas 用 HTML 調整
+-   [x] Wraptas 用 CSS 調整
+-   [x] Wraptas 開発環境の構築
+-   [x] 404 ページの制作
+-   [ ] ハンバーガーメニューでマップ表示化検証する
 
 ## サイトの構成
 
