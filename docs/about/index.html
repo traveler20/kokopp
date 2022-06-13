@@ -47,41 +47,6 @@
         <link rel="stylesheet" href="./../asset/css/style.css" />
     </head>
     <body>
-        <!-- .l-header -->
-        <header class="l-header" id="js-header">
-            <div class="l-header__inner">
-                <a class="l-main__logo" href="/">
-                    <picture>
-                        <img src="./../asset/img/logo.svg" alt="ここっぷ" />
-                    </picture>
-                </a>
-                <nav class="l-header__nav">
-                    <input
-                        type="checkbox"
-                        class="js-navToggle"
-                        id="l-header__navToggle"
-                    />
-                    <label
-                        for="l-header__navToggle"
-                        class="l-header__navHamburger"
-                    >
-                        <span></span>
-                    </label>
-                    <label
-                        for="l-header__navToggle"
-                        class="l-header__navClose"
-                    ></label>
-                    <ul class="l-header__navLists js-navLists">
-                        <li><a href="/gallery">ギャラリー</a></li>
-                        <li><a href="/map">地図</a></li>
-                        <li><a href="/about">当サイトについて</a></li>
-                        <li><a href="/contact">問い合わせ</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- /.l-header -->
-
         <!-- .l-main -->
         <main class="l-main">
             <!-- . -->
@@ -122,6 +87,11 @@
                             .swiper-pagination-bullet {
                                 background-color: #fff;
                             }
+                            .swiper-button-next,
+                            .swiper-button-prev,
+                            .swiper-pagination {
+                                z-index: 1;
+                            }
                         </style>
                     </div>
                     <h2>h2タイトルテキスト</h2>
@@ -149,10 +119,20 @@
                         >
                     </li>
                     <li>
-                        <a href="/map/"
-                            ><span class="material-symbols-outlined"> map </span
-                            >&nbsp;マップ</a
-                        >
+                        <input type="checkbox" id="l-nav__navToggle" />
+                        <label for="l-nav__navToggle" class="l-nav__label">
+                            <span class="material-symbols-outlined"> map </span
+                            >&nbsp;マップ
+                        </label>
+                        <label
+                            for="l-nav__navToggle"
+                            class="l-nav__navClose"
+                        ></label>
+                        <div class="l-nav__content">
+                            <iframe
+                                src="https://www.google.com/maps/d/embed?mid=1rll46eD5NaPP_aOETmhkPeTYgNIsogKL&ehbc=2E312F"
+                            ></iframe>
+                        </div>
                     </li>
                 </ul>
             </div>

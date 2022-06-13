@@ -7,8 +7,6 @@
         %>
     </head>
     <body>
-        <%- include('./../_common/_header',{path:path,}) %>
-
         <!-- .l-main -->
         <main class="l-main">
             <!-- . -->
@@ -48,6 +46,11 @@
                         <style>
                             .swiper-pagination-bullet {
                                 background-color: #fff;
+                            }
+                            .swiper-button-next,
+                            .swiper-button-prev,
+                            .swiper-pagination {
+                                z-index: 1;
                             }
                         </style>
                     </div>

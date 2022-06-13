@@ -112,10 +112,20 @@
                         >
                     </li>
                     <li>
-                        <a href="/map/"
-                            ><span class="material-symbols-outlined"> map </span
-                            >&nbsp;マップ</a
-                        >
+                        <input type="checkbox" id="l-nav__navToggle" />
+                        <label for="l-nav__navToggle" class="l-nav__label">
+                            <span class="material-symbols-outlined"> map </span
+                            >&nbsp;マップ
+                        </label>
+                        <label
+                            for="l-nav__navToggle"
+                            class="l-nav__navClose"
+                        ></label>
+                        <div class="l-nav__content">
+                            <iframe
+                                src="https://www.google.com/maps/d/embed?mid=1rll46eD5NaPP_aOETmhkPeTYgNIsogKL&ehbc=2E312F"
+                            ></iframe>
+                        </div>
                     </li>
                 </ul>
             </div>
