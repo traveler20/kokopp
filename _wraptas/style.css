@@ -70,15 +70,23 @@ body {
 .notion-collection-card-property .notion-page-title-icon {
     display: none;
 }
+.container {
+    max-width: 800px;
+    padding: 0 16px 32px;
+}
+.header__contentsWrapper,
+.page-_top .container,
+.page-gallery .container,
+.page-map .container,
+.page-contact .container {
+    max-width: 1000px;
+}
+
 /* ヘッダー */
 .header {
     height: 60px;
     background-color: #fff;
     border-bottom: 0.5px solid rgba(153, 153, 153, 0.5);
-}
-.header__contentsWrapper,
-.container {
-    max-width: 1000px;
 }
 .header__img {
     height: 48px;
@@ -91,13 +99,19 @@ body {
     top: -4px;
     bottom: 0;
 }
+.notion-h1,
+.notion-h2,
+.notion-h3,
+.notion-text {
+    line-height: 1.6;
+}
 /* 見出し */
 .notion-h2 {
     font-size: 24px;
     font-weight: bold;
     padding: 4px 14px;
     border-left: solid 4px #73cbf3;
-    margin: 24px 0 8px;
+    margin: 36px 0 16px;
 }
 /* グリッドレイアウト */
 .notion-gallery-grid {
@@ -106,7 +120,7 @@ body {
 }
 @media (min-width: 890px) {
     .notion-gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(318px, 1fr));
     }
 }
 .notion-collection-card-size-small .notion-collection-card-cover {
