@@ -106,6 +106,7 @@ body {
 .notion-h3,
 .notion-text {
     line-height: 1.6;
+    margin: 16px 0;
 }
 /* 見出し */
 .notion-h2 {
@@ -113,7 +114,12 @@ body {
     font-weight: bold;
     padding: 4px 14px;
     border-left: solid 4px #73cbf3;
-    margin: 36px 0 16px;
+    margin: 40px 0 20px;
+}
+/* iframe */
+iframe,
+.notion-asset-wrapper iframe {
+    border-radius: 16px;
 }
 /* グリッドレイアウト */
 .notion-gallery-grid {
@@ -127,6 +133,54 @@ body {
 }
 .notion-collection-card-size-small .notion-collection-card-cover {
     height: 200px;
+}
+
+/* カード */
+.notion-collection-card {
+    box-shadow: none;
+    border-radius: 0px;
+    border: solid 4px #ededed;
+    background-color: #ededed;
+}
+.notion-collection-card-property {
+    padding: 4px 0 2px;
+}
+.notion-collection-card .notion-page-title-text {
+    font-weight: bold;
+}
+
+/* テーブル */
+.notion-table-view-header-cell-inner,
+.notion-table-cell {
+    border: none;
+}
+.notion-table,
+.notion-board {
+    overflow: hidden;
+}
+@media (max-width: 890px) {
+    .notion-table-row {
+        flex-wrap: wrap;
+    }
+}
+.notion-page-icon-default {
+    display: none;
+}
+
+/* Twitter共有ボタン */
+.shareBtns__tw {
+    border-radius: 50%;
+    padding: 14px;
+    height: auto;
+}
+.shareBtns__tw:hover {
+    opacity: 0.7;
+}
+.shareBtns__tw__icon {
+    margin: 0;
+}
+.shareBtns__tw__text {
+    display: none;
 }
 /* 各記事 */
 .swiper-pagination-bullet {
