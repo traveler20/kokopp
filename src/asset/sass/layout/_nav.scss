@@ -47,7 +47,10 @@
     display: none;
 }
 .l-nav__content {
-    display: none;
+    position: absolute;
+    bottom: 56px;
+    left: 100%;
+    transition: all 0.4s;
 }
 /* menu toggle */
 #l-nav__navToggle {
@@ -67,6 +70,7 @@
         position: absolute;
         bottom: 56px;
         right: 0;
+        left: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
