@@ -34,6 +34,7 @@
     }
 }
 
+// ナビゲーション
 .l-nav__label {
     display: flex;
     justify-content: center;
@@ -77,6 +78,114 @@
         width: 90%;
         height: calc(100vh - 56px);
         background-color: $c-base-white;
+        iframe {
+            display: block;
+            width: 90%;
+            height: 90%;
+        }
+    }
+}
+
+//
+.header__searchOpenBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 8px;
+    right: 84px;
+    height: 70px;
+    width: 70px;
+    padding: 12px;
+    color: $c-body-white;
+    background-color: $c-primary;
+    box-shadow: 0 2px 4px 0px $c-base-black;
+    border-radius: 50%;
+    z-index: 1;
+}
+.header__searchOpenBtn:after {
+    font-size: 14px;
+    font-weight: bold;
+    content: "検索";
+}
+.header__searchOpenBtn:hover {
+    background-color: $c-primary;
+}
+.header__searchOpenBtn svg {
+    font-size: 16px;
+    color: $c-body-white;
+    fill: $c-body-white;
+    width: 24px;
+    height: 24px;
+}
+
+// icon-nav
+.l-nav-toggle {
+    color: $c-body-white;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    z-index: 1;
+}
+.l-nav-toggle__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 12px 12px;
+    background-color: $c-primary;
+    box-shadow: 0 2px 4px 0px $c-base-black;
+    border-radius: 50%;
+    position: relative;
+}
+.l-nav-toggle__label span {
+    font-weight: bold;
+}
+.l-nav-toggle__label:after {
+    font-size: 14px;
+    font-weight: bold;
+    content: "マップ";
+}
+.l-nav-toggle__navClose {
+    display: none;
+}
+.l-nav-toggle__content {
+    position: absolute;
+    bottom: 70px;
+    left: 140%;
+    transition: all 0.4s;
+}
+/* menu toggle */
+#l-nav-toggle__navToggle {
+    display: none;
+}
+#l-nav-toggle__navToggle:checked {
+    & ~ .l-nav-toggle__navClose {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $c-base-black, $alpha: 0.6);
+    }
+    & ~ .l-nav-toggle__content {
+        // position: absolute;
+        position: fixed;
+        bottom: 70px;
+        right: 0;
+        left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: calc(100vh - 56px);
+        background-color: $c-base-white;
+        border-radius: 0 0 0 16px;
         iframe {
             display: block;
             width: 90%;
