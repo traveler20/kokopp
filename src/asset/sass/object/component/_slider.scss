@@ -8,6 +8,9 @@
     overflow-y: hidden;
     position: relative;
     background: #ccc;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 .swiper-slide picture {
     display: block;

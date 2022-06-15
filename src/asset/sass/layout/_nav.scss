@@ -163,6 +163,19 @@
     bottom: 70px;
     left: 140%;
     transition: all 0.4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: calc(100vh - 56px);
+    background-color: $c-base-white;
+    border-radius: 0 0 0 16px;
+    iframe {
+        display: block;
+        width: 90%;
+        height: 90%;
+    }
 }
 /* menu toggle */
 #l-nav-toggle__navToggle {
@@ -184,17 +197,5 @@
         bottom: 70px;
         right: 0;
         left: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: calc(100vh - 56px);
-        background-color: $c-base-white;
-        border-radius: 0 0 0 16px;
-        iframe {
-            display: block;
-            width: 90%;
-            height: 90%;
-        }
     }
 }
