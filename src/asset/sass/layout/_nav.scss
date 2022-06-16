@@ -93,36 +93,49 @@
 @mixin bottom-button() {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     padding: 4px;
     color: $c-body-white;
     background-color: $c-primary;
     box-shadow: 0 2px 4px 0px $c-base-black;
-    border-radius: 50%;
+    // border-radius: 50%;
+    border-radius: 16px;
 }
-
 //
-.header__searchOpenBtn {
-    @include bottom-button();
-
-    position: fixed;
-    bottom: 16px;
-    right: 76px;
-    z-index: 1;
-}
 .header__searchOpenBtn:after {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
+    line-height: 1.4;
     content: "検索";
+}
+.l-nav-toggle__label:after {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    content: "マップ";
 }
 .header__searchOpenBtn:hover {
     background-color: $c-primary;
     opacity: 0.7;
 }
+.l-nav-toggle__label:hover {
+    opacity: 0.7;
+}
+
+// ──────────────────────────────
+.header__searchOpenBtn {
+    @include bottom-button();
+
+    position: fixed;
+    bottom: 16px;
+    right: 88px;
+    z-index: 1;
+}
+
 .header__searchOpenBtn svg {
     font-size: 16px;
     color: $c-body-white;
@@ -144,16 +157,8 @@
 
     position: relative;
 }
-.l-nav-toggle__label:hover {
-    opacity: 0.7;
-}
 .l-nav-toggle__label span {
     font-weight: bold;
-}
-.l-nav-toggle__label:after {
-    font-size: 10px;
-    font-weight: bold;
-    content: "マップ";
 }
 .l-nav-toggle__navClose {
     display: none;
@@ -168,7 +173,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: calc(100vh - 56px);
+    height: calc(100% - 56px);
     background-color: $c-base-white;
     border-radius: 0 0 0 16px;
     iframe {
