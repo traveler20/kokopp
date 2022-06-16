@@ -2,6 +2,56 @@
 --------------------------- */
 @use "./../foundation/system" as *;
 
+// ──────────────────────────────
+// タイトルとURLのコピー
+// ──────────────────────────────
+.l-footer-share {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0;
+    .l-footer-share__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .l-footer-share__icon {
+        fill: $c-base-white;
+        width: 24px;
+    }
+    .l-footer-share__url,
+    .l-footer-share__twitter {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        height: 30px;
+        padding: 4px 16px;
+        border-radius: 4px;
+        color: $c-base-white;
+        background-color: $c-primary;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .l-footer-share__twitter {
+        background-color: #55acee;
+    }
+    .l-footer-share__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .l-footer {
     // text-align: center;
     font-size: 1.4rem;

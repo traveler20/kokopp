@@ -65,6 +65,14 @@ const swiper = new Swiper(".swiper-container", {
     },
 });
 
+// urlCopy
+function urlCopy() {
+    var url = location.href;
+    var title = document.title;
+    navigator.clipboard.writeText("【" + title + "】" + " " + url);
+    document.getElementById("urlcopyBtn").value = "コピーしました！";
+}
+
 // .js-fadein
 function showElementAnimation() {
     /* js-fadeInの値をelementに代入 */

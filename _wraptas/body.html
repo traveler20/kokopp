@@ -9,6 +9,49 @@
 ></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<section class="l-footer-share">
+    <div class="l-footer-share__inner">
+        <span class="l-footer-share__url">
+            <label class="l-footer-share__label" for="urlcopyBtn">
+                <svg
+                    class="l-footer-share__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="24"
+                >
+                    <path
+                        d="M9.875 18.275Q8.55 18.275 7.638 17.362Q6.725 16.45 6.725 15.125V3.725Q6.725 2.4 7.638 1.487Q8.55 0.575 9.875 0.575H18.275Q19.6 0.575 20.513 1.487Q21.425 2.4 21.425 3.725V15.125Q21.425 16.45 20.513 17.362Q19.6 18.275 18.275 18.275ZM4.725 23.425Q3.4 23.425 2.488 22.513Q1.575 21.6 1.575 20.275V6.575H4.725V20.275Q4.725 20.275 4.725 20.275Q4.725 20.275 4.725 20.275H15.425V23.425Z"
+                    />
+                </svg>
+            </label>
+            <input
+                id="urlcopyBtn"
+                onclick="urlCopy()"
+                type="button"
+                value="タイトルとURLをコピー"
+            />
+        </span>
+        <a
+            class="l-footer-share__twitter"
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw&text=川越観光ならここっぷ&via=kokopp_designer&hashtags=ここっぷ"
+            target="_blank"
+            rel="nofollow noopener"
+        >
+            <svg
+                class="l-footer-share__icon"
+                viewBox="0 0 512 512"
+                height="24"
+                width="24"
+            >
+                <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                ></path>
+            </svg>
+            Twitterで共有</a
+        >
+    </div>
+</section>
+
 <!-- .l-nav -->
 <div class="l-nav-toggle">
     <input type="checkbox" id="l-nav-toggle__navToggle" />
@@ -108,5 +151,5 @@
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script type="text/javascript" charset="utf-8">
-    // window.onload=function(){const e=document.getElementById("js-loading");e.classList.add("is-loaded"),document.getElementById("js-fv").classList.add("is-show")},function(){const e=document.getElementById("js-header");let n=0,t,i=!1;window.addEventListener("scroll",function(){t=window.scrollY,i||(window.requestAnimationFrame(function(){t,60<t&&(t>n?e.classList.add("is-headIn"):e.classList.remove("is-headIn"),n=t),i=!1}),i=!0)})}();const toggle=document.getElementsByClassName("js-navToggle")[0],navLink=document.querySelectorAll(".l-header__navLists li a,.l-header__navCta");for(let e=0;e<navLink.length;e++)navLink[e].onclick=function(){toggle.checked=!1};const swiper=new Swiper(".swiper-container",{loop:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});function showElementAnimation(){const n=document.getElementsByClassName("js-fadeIn");if(n){var t=768<window.innerHeight?200:40,i=window.pageYOffset,o=window.innerHeight;for(let e=0;e<n.length;e++){var s=i+n[e].getBoundingClientRect().top;s<i+o-t?n[e].classList.add("is-show"):i+o<s&&n[e].classList.remove("is-show")}}}showElementAnimation(),window.addEventListener("scroll",showElementAnimation);
+    // window.onload=function(){const e=document.getElementById("js-loading");e.classList.add("is-loaded"),document.getElementById("js-fv").classList.add("is-show")},function(){const e=document.getElementById("js-header");let n=0,t,i=!1;window.addEventListener("scroll",function(){t=window.scrollY,i||(window.requestAnimationFrame(function(){t,60<t&&(t>n?e.classList.add("is-headIn"):e.classList.remove("is-headIn"),n=t),i=!1}),i=!0)})}();const toggle=document.getElementsByClassName("js-navToggle")[0],navLink=document.querySelectorAll(".l-header__navLists li a,.l-header__navCta");for(let e=0;e<navLink.length;e++)navLink[e].onclick=function(){toggle.checked=!1};const swiper=new Swiper(".swiper-container",{loop:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});function urlCopy(){var e=location.href,n=document.title;navigator.clipboard.writeText("【"+n+"】 "+e),document.getElementById("urlcopyBtn").value="コピーしました！"}function showElementAnimation(){const n=document.getElementsByClassName("js-fadeIn");if(n){var t=768<window.innerHeight?200:40,i=window.pageYOffset,o=window.innerHeight;for(let e=0;e<n.length;e++){var s=i+n[e].getBoundingClientRect().top;s<i+o-t?n[e].classList.add("is-show"):i+o<s&&n[e].classList.remove("is-show")}}}showElementAnimation(),window.addEventListener("scroll",showElementAnimation);
 </script>
