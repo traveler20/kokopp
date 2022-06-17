@@ -8,7 +8,7 @@
 /*--------------------------------------*
  * layout
  *--------------------------------------*/
-@use "./layout/header";
+// @use "./layout/header";
 @use "./layout/footer";
 @use "./layout/main";
 @use "./layout/section";
@@ -31,9 +31,9 @@
  * project
  -------------------*/
 @use "./object/project/fv";
-@use "./object/project/contact";
+// @use "./object/project/contact";
 
 /*-------------------
  * object
  -------------------*/
-@use "./object/utility/display";
+// @use "./object/utility/display";

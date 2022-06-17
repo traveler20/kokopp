@@ -2,94 +2,9 @@
 --------------------------- */
 @use "./../foundation/system" as *;
 
-.l-nav {
-    // position: sticky;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: solid 0.5px $c-base-black;
-    z-index: 1;
-
-    &__links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $c-base-white;
-
-        li {
-            width: 50%;
-        }
-        li a {
-            text-align: center;
-            text-decoration: none;
-            color: $c-body-black;
-
-            width: 100%;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding: 14px 20px;
-            border: solid 0.5px $c-base-black;
-        }
-    }
-}
-
-// ナビゲーション
-.l-nav__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 14px 20px;
-    border: solid 0.5px $c-base-black;
-}
-.l-nav__navClose {
-    display: none;
-}
-.l-nav__content {
-    position: absolute;
-    bottom: 56px;
-    left: 100%;
-    transition: all 0.4s;
-}
-/* menu toggle */
-#l-nav__navToggle {
-    display: none;
-}
-#l-nav__navToggle:checked {
-    & ~ .l-nav__navClose {
-        display: block;
-        position: fixed;
-        bottom: 56px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($color: $c-base-black, $alpha: 0.6);
-    }
-    & ~ .l-nav__content {
-        position: absolute;
-        bottom: 56px;
-        right: 0;
-        left: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: calc(100vh - 56px);
-        background-color: $c-base-white;
-        iframe {
-            display: block;
-            width: 90%;
-            height: 90%;
-        }
-    }
-}
-
 // ──────────────────────────────
-// bottom
+// common
 // ──────────────────────────────
-// bottom-button
 @mixin bottom-button() {
     display: flex;
     flex-direction: column;
@@ -102,7 +17,6 @@
     color: $c-body-white;
     background-color: $c-primary;
     box-shadow: 0 2px 4px 0px $c-base-black;
-    // border-radius: 50%;
     border-radius: 16px;
 }
 //
@@ -127,6 +41,8 @@
 }
 
 // ──────────────────────────────
+// 検索ボタン
+// ──────────────────────────────
 .header__searchOpenBtn {
     @include bottom-button();
 
@@ -144,7 +60,9 @@
     height: 24px;
 }
 
-// icon-nav
+// ──────────────────────────────
+// マップボタン
+// ──────────────────────────────
 .l-nav-toggle {
     color: $c-body-white;
     position: fixed;

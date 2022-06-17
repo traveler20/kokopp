@@ -6,8 +6,6 @@
         <%- include('./_common/_head', { path:path,meta:data.meta['404'],})%>
     </head>
     <body>
-        <%- include('./_common/_header',{path:path,}) %>
-
         <!-- .l-main -->
         <main class="l-main">
             <!--  -->
@@ -18,21 +16,19 @@
                     </h2>
                     <p class="l-section__lead">
                         当サイトをご覧頂きありがとうございます。<br />
-                        申し訳ありませんが、アクセスしようとした記事は削除されたかURLが変更されています。<br />
-                        <a href="/">トップページ</a>に戻る
+                        申し訳ありませんが、アクセスしようとした記事は削除されたかURLが変更されています。🙇
                     </p>
-                    <article class="l-section__block"></article>
                     <article class="l-section__block">
-                        <!-- .c-cta -->
-                        <%- include('./_component/_cta',{path:path,}) %>
-                        <!-- /.c-cta -->
+                        <div class="c-cta">
+                            <a href="/" class="c-cta__button"
+                                >トップページに戻る</a
+                            >
+                        </div>
                     </article>
                 </div>
             </section>
             <!-- / -->
         </main>
         <!-- /.l-main -->
-
-        <%- include('./_common/_footer',{path:path,}) %>
     </body>
 </html>
