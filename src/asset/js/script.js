@@ -72,6 +72,19 @@ function urlCopy() {
     navigator.clipboard.writeText("【" + title + "】" + " " + url);
     document.getElementById("urlcopyBtn").value = "コピーしました！";
 }
+function twitterShare() {
+    const link = document.getElementById("twitterBtn");
+    const url = location.href;
+    const title = document.title;
+    link.setAttribute(
+        "href",
+        "https://twitter.com/share?url=" +
+            url +
+            "&text=" +
+            title +
+            "&via=kokopp_designer&hashtags=ここっぷ"
+    );
+}
 
 // .js-fadein
 function showElementAnimation() {
