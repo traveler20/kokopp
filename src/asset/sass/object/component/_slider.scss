@@ -11,6 +11,8 @@
     overflow-y: hidden;
     position: relative;
     background: #ccc;
+    border: solid 4px #ccc;
+    border-radius: 16px;
     &::-webkit-scrollbar {
         display: none;
     }

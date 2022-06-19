@@ -13,9 +13,9 @@
     margin: 40px 0;
     .l-footer-share__inner {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         gap: 8px;
         width: 100%;
         max-width: 1000px;
