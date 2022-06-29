@@ -10,8 +10,8 @@
 .swiper-container {
     overflow-y: hidden;
     position: relative;
-    background: #ccc;
-    border: solid 4px #ccc;
+    background: $c-gray;
+    border: solid 4px $c-gray;
     border-radius: 16px;
     &::-webkit-scrollbar {
         display: none;

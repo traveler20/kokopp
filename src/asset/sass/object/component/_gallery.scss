@@ -13,7 +13,7 @@
         height: 100%;
         color: $c-body-black;
         text-decoration: none;
-        border: solid 0.5px #ccc;
+        border: solid 0.5px $c-gray;
 
         display: grid;
     }
@@ -23,7 +23,7 @@
     }
     &__picture {
         img {
-            border: solid 8px #fff;
+            border: solid 8px $c-white;
         }
     }
     &__title {
