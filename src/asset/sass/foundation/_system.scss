@@ -20,6 +20,43 @@ $c-base-black: $c-black;
 $c-body-white: $c-white;
 $c-body-black: $c-black;
 
+// typ
+// ---------------------
+@mixin heading2($text-color: $c-black) {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-left: solid 4px $c-primary;
+    margin: 40px 0 20px;
+}
+@mixin heading3($text-color: $c-black) {
+    padding: 2px 14px;
+    border-bottom: solid 2px $c-primary;
+    display: inline-block;
+    max-width: 560px;
+}
+@mixin top-heading2($text-color: $c-black) {
+    color: $text-color;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 80px auto 20px;
+    position: relative;
+    border: none;
+    &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 4px;
+        bottom: -4px;
+        left: 50%;
+        border-radius: 8px;
+        transform: translateX(-50%);
+        background-color: $c-primary;
+    }
+}
+
 // transition
 // ---------------------
 @mixin transition-base($second: 0.4s) {
