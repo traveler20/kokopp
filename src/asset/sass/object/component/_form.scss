@@ -24,7 +24,7 @@
         top: 5px;
         right: 20px;
         display: inline-block;
-        color: $c-body-white;
+        color: $c-white;
         background-color: $c-primary;
         border-radius: 4px;
         padding: 5px 5px;
@@ -33,7 +33,7 @@
     &__input {
         width: 90%;
         font-size: 16px;
-        border: solid 1px $c-base-black;
+        border: solid 1px $c-black;
         border-radius: 4px;
     }
     &__input:focus-visible {
