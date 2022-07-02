@@ -1,0 +1,13 @@
+/* LP用スタイリング */
+.titleSection,
+.header,
+#section-block-a493415e43314f858f8988786c5a4d10,
+.l-footer-share,
+.l-nav-toggle,
+.l-footer {
+    display: none;
+}
+.container {
+    max-width: 100vw;
+    padding: 0;
+}

@@ -141,7 +141,7 @@ body {
     padding: 2px 14px;
     border-bottom: solid 2px #73cbf3;
     display: inline-block;
-    max-width: 560px;
+    /*max-width: 560px;*/
 }
 /* iframe */
 iframe,
@@ -177,6 +177,26 @@ iframe,
 }
 .notion-collection-card .notion-page-title-text {
     font-weight: bold;
+}
+/* カレンダー */
+/*.react-calendar__navigation__arrow*/
+.react-calendar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notion-calender-link,
+.notion-calender-scheduleList-link,
+.notion-calender-scheduleList-link .notion-collection-card-property {
+    padding: 2px 0;
+}
+.notion-calender-link .notion-collection-card-body {
+    padding: 0;
+}
+.notion-calender-link
+    .notion-collection-card-body
+    .notion-collection-card-property {
+    padding: 0;
 }
 
 /**/
