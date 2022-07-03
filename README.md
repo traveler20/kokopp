@@ -69,19 +69,20 @@
 
 -   タイポグラフィ
     -   font-family
--   フォントサイズ
+    -   フォントサイズ
     -   heading
     -   utility
 -   色
     -   black
     -   white
     -   primary
+    -   secondary
     -   accent
 -   ボーダー
     -   radius
     -   width
--   余白
--   影
+-   spacing
+-   box-shadow
 -   transition
 -   max-width
 -   opacity
