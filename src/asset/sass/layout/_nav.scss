@@ -49,7 +49,7 @@
     position: fixed;
     bottom: 16px;
     right: 88px;
-    z-index: 1;
+    z-index: 9;
 }
 
 .header__searchOpenBtn svg {
@@ -68,7 +68,7 @@
     position: fixed;
     bottom: 16px;
     right: 16px;
-    z-index: 1;
+    z-index: 8;
 }
 .l-nav-toggle__label {
     @include bottom-button();
