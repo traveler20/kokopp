@@ -7,40 +7,39 @@ $c-white: #fff;
 $c-black: #333;
 $c-gray: #ccc;
 $c-lightGray: #efefef;
+//
 $c-primary: #73cbf3;
 $c-secondary: #ef91b9;
-//
 $c-accent: #ffe669;
 $c-kokoradi: #8bef6f;
-$c-aa: #73cbf3;
 
-//
+// other
 $c-link-blue: #1ca9e3;
 $c-brand-twitter: #55acee;
 
 //
 :root {
     --fg-color: #333; // black
-    --fg-color-0: rgba(51, 51, 51, 0.09);
-    --fg-color-1: rgba(51, 51, 51, 0.16);
-    --fg-color-2: rgba(51, 51, 51, 0.4);
-    --fg-color-3: rgba(51, 51, 51, 0.6);
-    --fg-color-4: #333;
-    --fg-color-5: rgba(51, 51, 51, 0.0024);
-    --fg-color-6: rgba(51, 51, 51, 0.8);
-    --fg-color-icon: var(--fg-color);
+    --fg-color-0: rgba(51, 51, 51, 0.09); // black #333
+    --fg-color-1: rgba(51, 51, 51, 0.16); // black #333
+    --fg-color-2: rgba(51, 51, 51, 0.4); // black #333
+    --fg-color-3: rgba(51, 51, 51, 0.6); // black #333
+    --fg-color-4: #333; // black #333
+    --fg-color-5: rgba(51, 51, 51, 0.0024); // black #333
+    --fg-color-6: rgba(51, 51, 51, 0.8); // black #333
+    --fg-color-icon: var(--fg-color); // black #333
     --bg-color: transparent; //
-    --bg-color-0: rgba(135, 131, 120, 0.15);
+    --bg-color-0: rgba(51, 51, 51, 0.16); // black #333
     --bg-color-1: rgb(247, 246, 243);
-    --bg-color-2: rgba(135, 131, 120, 0.15);
-    --select-color-0: rgb(46, 170, 220);
-    --select-color-1: rgba(45, 170, 219, 0.3);
+    --bg-color-2: rgba(51, 51, 51, 0.16); // black #333
+    --select-color-0: #1ca9e3; // link-blue
+    --select-color-1: rgba(51, 51, 51, 0.3); // black #333
     --select-color-2: #d9eff8;
-    --notion-red: rgb(224, 62, 62);
+    --notion-red: #e03e3e;
     --notion-pink: #ef91b9; // secondary
     --notion-blue: #1ca9e3; // link-blue
     --notion-purple: #6940a5;
-    --notion-teal: #8bef6f; // kokoradi green
+    --notion-teal: #8bef6f; // kokoradi
     --notion-yellow: #ffe669; // accent
     --notion-orange: #d9730d;
     --notion-brown: #64473a;
@@ -49,7 +48,7 @@ $c-brand-twitter: #55acee;
     --notion-pink_background: #ef91b9; // secondary
     --notion-blue_background: #73cbf3; // primary
     --notion-purple_background: #eae4f2;
-    --notion-teal_background: #ddedea;
+    --notion-teal_background: #8bef6f; // kokoradi
     --notion-yellow_background: #ffe669; // accent
     --notion-orange_background: #faebdd;
     --notion-brown_background: #e9e5e3;
@@ -58,7 +57,7 @@ $c-brand-twitter: #55acee;
     --notion-pink_background_co: rgba(239, 145, 186, 0.3); // secondary #ef91b9
     --notion-blue_background_co: rgba(115, 202, 243, 0.3); // primary #73cbf3
     --notion-purple_background_co: rgba(234, 228, 242, 0.3);
-    --notion-teal_background_co: rgba(221, 237, 234, 0.3);
+    --notion-teal_background_co: rgba(139, 239, 111, 0.3); // kokoradi #8bef6f
     --notion-yellow_background_co: rgba(255, 230, 105, 0.3); // accent #ffe669
     --notion-orange_background_co: rgba(250, 235, 221, 0.3);
     --notion-brown_background_co: rgba(233, 229, 227, 0.3);
