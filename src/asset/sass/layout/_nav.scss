@@ -68,7 +68,7 @@
     position: fixed;
     bottom: 16px;
     right: 16px;
-    z-index: 8;
+    z-index: 9;
 }
 .l-nav-toggle__label {
     @include bottom-button();
@@ -98,6 +98,7 @@
         display: block;
         width: 90%;
         height: 90%;
+        object-fit: unset;
     }
 }
 /* menu toggle */
