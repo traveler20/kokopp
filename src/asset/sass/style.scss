@@ -8,10 +8,7 @@
 /*--------------------------------------*
  * layout
  *--------------------------------------*/
-// @use "./layout/header";
 @use "./layout/footer";
-// @use "./layout/main";
-// @use "./layout/section";
 @use "./layout/nav";
 
 /*--------------------------------------*
@@ -20,9 +17,6 @@
 /*-------------------
  * component
  -------------------*/
-// @use "./object/component/loading";
-// // @use "./object/component/lists";
-// @use "./object/component/gallery";
 @use "./object/component/cta";
 @use "./object/component/slider";
 @use "./object/component/form";
@@ -31,9 +25,7 @@
  * project
  -------------------*/
 @use "./object/project/fv";
-// @use "./object/project/contact";
 
 /*-------------------
  * object
  -------------------*/
-// @use "./object/utility/display";
