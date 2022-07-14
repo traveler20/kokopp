@@ -1,0 +1,51 @@
+/* l-section
+--------------------------- */
+@use "./foundation/reset";
+@use "./foundation/system" as *;
+@use "./foundation/base";
+@use "./object/component/cta";
+
+// ───────────────
+// 固定ページセクション
+// ───────────────
+.l-section {
+    padding: 120px 0;
+
+    &__inner {
+        @include content-maxwidth();
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 auto 20px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 4px;
+            bottom: -4px;
+            left: 50%;
+            border-radius: 8px;
+            transform: translateX(-50%);
+            background-color: $c-primary;
+        }
+    }
+    &__lead {
+        display: table;
+        margin: 0 auto 32px;
+        text-align: left;
+    }
+    &__block {
+        margin: 32px auto 0;
+    }
+
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}
