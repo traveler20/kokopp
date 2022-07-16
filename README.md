@@ -105,3 +105,16 @@
 -   slider
 
 ---
+
+-   l-footer
+-   l-nav
+<!-- -   l-header
+-   l-main
+-   l-section -->
+-   p-fv
+-   c-cta
+-   c-slider(swiper)
+-   c-form
+<!-- -   c-gallery
+-   c-loading
+-   c-lists -->
