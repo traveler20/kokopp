@@ -24,7 +24,7 @@
             id="twitterBtn"
             onclick="twitterShare()"
             class="l-footer-share__twitter"
-            href="https://twitter.com/share?ref_src=twsrc%5Etfw&text=川越観光ならここっぷ&via=kokopp_designer&hashtags=ここっぷ"
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw&text=川越観光ならここっぷ&via=kokopp_design&hashtags=ここっぷ"
             target="_blank"
             rel="nofollow noopener"
         >
@@ -43,19 +43,7 @@
     </div>
 </section>
 
-<button
-    id="header-btn-search"
-    aria-label="検索"
-    aria-haspopup="dialog"
-    class="header__searchOpenBtn"
->
-    <svg class="notion-icon" viewBox="0 0 17 17">
-        <path
-            d="M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.8633 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.5391 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.19629 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z"
-        ></path>
-    </svg>
-</button>
-
+<!-- .l-nav -->
 <div class="l-nav-toggle">
     <input type="checkbox" id="l-nav-toggle__navToggle" />
     <label for="l-nav-toggle__navToggle" class="l-nav-toggle__label">
@@ -68,6 +56,7 @@
         ></iframe>
     </div>
 </div>
+<!-- /.l-nav -->
 
 <!-- .l-footer -->
 <footer class="l-footer">
@@ -75,7 +64,10 @@
         <nav class="l-footer__nav">
             <a class="l-main__logo" href="/">
                 <picture>
-                    <img src="<%= path%>asset/img/logo.svg" alt="ここっぷ" />
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/notionstyles.appspot.com/o/users%2F4lDCwaXioaNIHmRhHnuAUIzJqrs1%2Ff971ea97-fba9-4798-a836-ad97b9c23d52.svg?alt=media&token=7f36e884-9905-46b4-9d49-6da6ab8f3efd"
+                        alt="ここっぷ"
+                    />
                 </picture>
             </a>
         </nav>
@@ -121,7 +113,15 @@
             <ul class="l-footer__lists">
                 <li>
                     <a
-                        href="https://twitter.com/kokopp_designer"
+                        href="https://www.instagram.com/kokopp_design/"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        >Instagram</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://twitter.com/kokopp_design"
                         target="_blank"
                         rel="nofollow noopener noreferrer"
                         >Twitter</a
@@ -140,11 +140,12 @@
                 <li><a href="/map/">マップ</a></li>
                 <!-- <li><a href="/calendar/">カレンダー</a></li> -->
                 <li><a href="/news/">お知らせ</a></li>
-                <li><a href="/blog/">運営者ブログ</a></li>
+                <li><a href="/article/">読み物</a></li>
+                <li><a href="/blog/">雑記</a></li>
             </ul>
         </nav>
     </div>
-    <small class="l-footer__copy">&copy;&nbsp;2022&nbsp;kokopp.</small>
+    <small class="l-footer__copy">&copy;&nbsp;2022&nbsp;ここっぷ</small>
 </footer>
 <!-- /.l-footer -->
 
